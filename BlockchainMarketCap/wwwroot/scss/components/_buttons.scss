@@ -1,0 +1,135 @@
+@use '../variables' as v;
+@use 'sass:color';
+
+.btn {
+  display: inline-block;
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: v.$small-spacing v.$base-spacing;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: v.$border-radius;
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
+  
+  &:hover, &:focus {
+    text-decoration: none;
+    outline: 0;
+  }
+  
+  &:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+  }
+}
+
+// Button variants
+.btn-primary {
+  background-color: v.$primary-color;
+  border-color: v.$primary-color;
+  color: #fff;
+  
+  &:hover, &:focus {
+    background-color: color.adjust(v.$primary-color, $lightness: -7%);
+    border-color: color.adjust(v.$primary-color, $lightness: -10%);
+  }
+}
+
+.btn-secondary {
+  background-color: v.$secondary-color;
+  border-color: v.$secondary-color;
+  color: #fff;
+  
+  &:hover, &:focus {
+    background-color: color.adjust(v.$secondary-color, $lightness: -7%);
+    border-color: color.adjust(v.$secondary-color, $lightness: -10%);
+  }
+}
+
+.btn-accent {
+  background-color: v.$accent-color;
+  border-color: v.$accent-color;
+  color: #fff;
+  
+  &:hover, &:focus {
+    background-color: color.adjust(v.$accent-color, $lightness: -7%);
+    border-color: color.adjust(v.$accent-color, $lightness: -10%);
+  }
+}
+
+.btn-outline {
+  background-color: transparent;
+  
+  &.btn-primary {
+    border-color: v.$primary-color;
+    color: v.$primary-color;
+    
+    &:hover, &:focus {
+      background-color: v.$primary-color;
+      color: #fff;
+    }
+  }
+  
+  &.btn-secondary {
+    border-color: v.$secondary-color;
+    color: v.$secondary-color;
+    
+    &:hover, &:focus {
+      background-color: v.$secondary-color;
+      color: #fff;
+    }
+  }
+}
+
+// Button sizes
+.btn-sm {
+  padding: calc(v.$small-spacing / 2) v.$small-spacing;
+  font-size: v.$small-font-size;
+}
+
+.btn-lg {
+  padding: calc(v.$base-spacing * 1.5) calc(v.$base-spacing * 2);
+  font-size: 1.25rem;
+}
+
+// Refresh button specific
+.refresh-button {
+  @extend .btn;
+  @extend .btn-primary;
+  display: flex;
+  align-items: center;
+  gap: v.$small-spacing;
+  
+  &::before {
+    content: "↻";
+    display: inline-block;
+    font-size: 1.2em;
+  }
+  
+  &.loading {
+    position: relative;
+    color: transparent;
+    
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 1em;
+      height: 1em;
+      margin: -0.5em 0 0 -0.5em;
+      border: 2px solid rgba(255, 255, 255, 0.5);
+      border-top-color: white;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+  }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

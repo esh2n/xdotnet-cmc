@@ -1,0 +1,127 @@
+@use '../variables' as v;
+@use 'sass:color';
+
+.crypto-table-container {
+  background-color: #fff;
+  border-radius: v.$border-radius;
+  box-shadow: v.$box-shadow;
+  margin-bottom: v.$large-spacing;
+  overflow: hidden;
+}
+
+.crypto-table {
+  width: 100%;
+  
+  th {
+    background-color: v.$light-gray;
+    padding: v.$base-spacing;
+    font-weight: 600;
+    border-bottom: 1px solid v.$medium-gray;
+    
+    &.active {
+      background-color: color.adjust(v.$light-gray, $lightness: -5%);
+    }
+    
+    &:hover {
+      background-color: color.adjust(v.$light-gray, $lightness: -3%);
+      cursor: pointer;
+    }
+  }
+  
+  td {
+    padding: v.$base-spacing;
+    border-bottom: 1px solid v.$light-gray;
+  }
+  
+  tr:last-child td {
+    border-bottom: none;
+  }
+  
+  tr:hover td {
+    background-color: rgba(v.$light-gray, 0.5);
+  }
+}
+
+.crypto-name {
+  display: flex;
+  align-items: center;
+  
+  .crypto-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: v.$small-spacing;
+  }
+  
+  .crypto-symbol {
+    color: v.$dark-gray;
+    margin-left: v.$small-spacing;
+    font-size: v.$small-font-size;
+  }
+}
+
+.positive-change {
+  color: v.$positive-change;
+  font-weight: 600;
+}
+
+.negative-change {
+  color: v.$negative-change;
+  font-weight: 600;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: v.$base-spacing;
+  border-bottom: 1px solid v.$light-gray;
+  
+  h1 {
+    margin: 0;
+    font-size: v.$heading-font-size;
+  }
+  
+  .refresh-info {
+    display: flex;
+    align-items: center;
+    gap: v.$base-spacing;
+  }
+  
+  .last-updated {
+    color: v.$dark-gray;
+    font-size: v.$small-font-size;
+  }
+}
+
+.loading {
+  padding: v.$large-spacing;
+  text-align: center;
+  color: v.$dark-gray;
+  font-style: italic;
+}
+
+// Responsive styles for the table
+@media (max-width: v.$tablet-breakpoint) {
+  .crypto-table {
+    th, td {
+      padding: v.$small-spacing;
+    }
+    
+    // Optional: Hide less important columns on small screens
+    th:nth-child(4), 
+    td:nth-child(4) {
+      display: none;
+    }
+  }
+  
+  .controls {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: v.$small-spacing;
+    
+    .refresh-info {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+}

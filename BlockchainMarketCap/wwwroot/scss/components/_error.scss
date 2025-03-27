@@ -1,0 +1,42 @@
+@use '../variables' as v;
+@use 'sass:color';
+
+.error-container {
+  text-align: center;
+  padding: 4rem 1rem;
+  max-width: 600px;
+  margin: 2rem auto;
+  background-color: #fff;
+  border-radius: v.$border-radius;
+  box-shadow: v.$box-shadow;
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: v.$warning-color;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: v.$dark-gray;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    border-radius: v.$border-radius;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    
+    &.btn-primary {
+      background-color: v.$primary-color;
+      color: #fff;
+      
+      &:hover {
+        background-color: color.adjust(v.$primary-color, $lightness: -10%);
+      }
+    }
+  }
+}

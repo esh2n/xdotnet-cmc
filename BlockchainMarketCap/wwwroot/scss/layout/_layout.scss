@@ -1,0 +1,72 @@
+@use '../variables' as v;
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  background-color: #fff;
+  padding: v.$base-spacing 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    h1 {
+      font-size: 1.6rem;
+      margin: 0;
+      color: v.$primary-color;
+    }
+    
+    nav {
+      display: flex;
+      gap: v.$large-spacing;
+      
+      .nav-link {
+        color: v.$dark-gray;
+        text-decoration: none;
+        transition: color 0.2s ease;
+        
+        &:hover {
+          color: v.$primary-color;
+        }
+      }
+    }
+  }
+}
+
+main {
+  flex: 1;
+  padding: v.$large-spacing 0;
+}
+
+.app-footer {
+  background-color: v.$light-gray;
+  padding: v.$large-spacing 0;
+  margin-top: auto;
+  
+  p {
+    margin: 0;
+    color: v.$dark-gray;
+    text-align: center;
+  }
+}
+
+// Responsive adjustments
+@media (max-width: v.$tablet-breakpoint) {
+  .app-header {
+    .header-content {
+      flex-direction: column;
+      gap: v.$base-spacing;
+      text-align: center;
+      
+      nav {
+        gap: v.$base-spacing;
+      }
+    }
+  }
+}

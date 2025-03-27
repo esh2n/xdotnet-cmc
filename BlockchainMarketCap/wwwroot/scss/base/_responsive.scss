@@ -1,0 +1,75 @@
+@use '../variables' as v;
+
+// Mobile-first responsive mixins
+@mixin mobile {
+  @media (max-width: #{v.$tablet-breakpoint - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{v.$tablet-breakpoint}) and (max-width: #{v.$desktop-breakpoint - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{v.$desktop-breakpoint}) {
+    @content;
+  }
+}
+
+@mixin large-desktop {
+  @media (min-width: #{v.$large-desktop-breakpoint}) {
+    @content;
+  }
+}
+
+// Helper classes for responsive behavior
+.mobile-only {
+  display: none;
+  
+  @include mobile {
+    display: block;
+  }
+}
+
+.desktop-only {
+  display: none;
+  
+  @include desktop {
+    display: block;
+  }
+}
+
+// Responsive container
+.container {
+  width: 100%;
+  padding: 0 v.$base-spacing;
+  margin: 0 auto;
+  
+  @include tablet {
+    max-width: calc(#{v.$tablet-breakpoint} - #{v.$base-spacing * 2});
+  }
+  
+  @include desktop {
+    max-width: calc(#{v.$desktop-breakpoint} - #{v.$base-spacing * 2});
+  }
+  
+  @include large-desktop {
+    max-width: calc(#{v.$large-desktop-breakpoint} - #{v.$base-spacing * 2});
+  }
+}
+
+// Responsive text sizing
+html {
+  font-size: 14px;
+  
+  @include tablet {
+    font-size: 15px;
+  }
+  
+  @include desktop {
+    font-size: 16px;
+  }
+}

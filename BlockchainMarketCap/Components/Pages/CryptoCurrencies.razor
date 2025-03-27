@@ -1,0 +1,19 @@
+@page "/cryptocurrencies"
+@using BlockchainMarketCap.Services
+@inject ICryptoCurrencyService CryptoService
+
+<PageTitle>Blockchain Market Cap</PageTitle>
+
+<div class="container">
+    <div id="crypto-table-app"></div>
+</div>
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        await base.OnInitializedAsync();
+
+        // The actual data fetching is done client-side in the Vue component
+        // But we could optionally prefetch data here and pass it to the client
+    }
+}

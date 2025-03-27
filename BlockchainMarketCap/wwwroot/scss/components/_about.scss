@@ -1,0 +1,57 @@
+@use '../variables' as v;
+
+.about-page {
+  padding: v.$large-spacing 0;
+  
+  h1 {
+    margin-bottom: v.$large-spacing;
+    text-align: center;
+  }
+}
+
+.content-section {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.info-card {
+  background-color: #fff;
+  border-radius: v.$border-radius;
+  box-shadow: v.$box-shadow;
+  padding: v.$large-spacing;
+  margin-bottom: v.$large-spacing;
+  
+  h2 {
+    color: v.$primary-color;
+    margin-bottom: v.$base-spacing;
+    padding-bottom: v.$small-spacing;
+    border-bottom: 1px solid v.$light-gray;
+  }
+  
+  p {
+    margin-bottom: v.$base-spacing;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  
+  ul {
+    padding-left: v.$large-spacing;
+    margin-bottom: v.$base-spacing;
+    
+    li {
+      margin-bottom: v.$small-spacing;
+    }
+  }
+}
+
+// Add some animation to cards
+.info-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+}

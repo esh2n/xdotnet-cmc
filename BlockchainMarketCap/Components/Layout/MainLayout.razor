@@ -1,0 +1,31 @@
+﻿@inherits LayoutComponentBase
+
+<div class="page">
+    <header class="app-header">
+        <div class="container">
+            <div class="header-content">
+                <h1>Blockchain Market Cap</h1>
+                <nav>
+                    <a href="/" class="nav-link">Home</a>
+                    <a href="/cryptocurrencies" class="nav-link">Cryptocurrencies</a>
+                    <a href="/about" class="nav-link">About</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            @Body
+        </div>
+    </main>
+
+    <footer class="app-footer">
+        <div class="container">
+            <p>&copy; 2025 Blockchain Market Cap. Data provided by CoinGecko API.</p>
+        </div>
+    </footer>
+</div>
+
+<!-- Add bundled JavaScript -->
+<script src="js/bundle.js" defer></script>

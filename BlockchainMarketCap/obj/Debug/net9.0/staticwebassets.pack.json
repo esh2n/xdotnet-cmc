@@ -1,0 +1,125 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/esh2n/go/github.com/esh2n/xdotnet/BlockchainMarketCap/obj/Debug/net9.0/scopedcss/projectbundle/BlockchainMarketCap.bundle.scp.css",
+      "PackagePath": "staticwebassets/BlockchainMarketCap.bundle.scp.css"
+    },
+    {
+      "Id": "/Users/esh2n/go/github.com/esh2n/xdotnet/BlockchainMarketCap/wwwroot/app.css",
+      "PackagePath": "staticwebassets/app.css"
+    },
+    {
+      "Id": "/Users/esh2n/go/github.com/esh2n/xdotnet/BlockchainMarketCap/wwwroot/bootstrap/bootstrap.min.css",
+      "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/esh2n/go/github.com/esh2n/xdotnet/BlockchainMarketCap/wwwroot/bootstrap/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/Users/esh2n/go/github.com/esh2n/xdotnet/BlockchainMarketCap/wwwroot/css/main.css",
+      "PackagePath": "staticwebassets/css/main.css"
+    },
+    {
+      "Id": "/Users/esh2n/go/github.com/esh2n/xdotnet/BlockchainMarketCap/wwwroot/favicon.png",
+      "PackagePath": "staticwebassets/favicon.png"
+    },
+    {
+      "Id": "/Users/esh2n/go/github.com/esh2n/xdotnet/BlockchainMarketCap/wwwroot/js/bundle.js",
+      "PackagePath": "staticwebassets/js/bundle.js"
+    },
+    {
+      "Id": "/Users/esh2n/go/github.com/esh2n/xdotnet/BlockchainMarketCap/wwwroot/js/bundle.js.map",
+      "PackagePath": "staticwebassets/js/bundle.js.map"
+    },
+    {
+      "Id": "/Users/esh2n/go/github.com/esh2n/xdotnet/BlockchainMarketCap/wwwroot/scss/_variables.scss",
+      "PackagePath": "staticwebassets/scss/_variables.scss"
+    },
+    {
+      "Id": "/Users/esh2n/go/github.com/esh2n/xdotnet/BlockchainMarketCap/wwwroot/scss/base/_reset.scss",
+      "PackagePath": "staticwebassets/scss/base/_reset.scss"
+    },
+    {
+      "Id": "/Users/esh2n/go/github.com/esh2n/xdotnet/BlockchainMarketCap/wwwroot/scss/base/_responsive.scss",
+      "PackagePath": "staticwebassets/scss/base/_responsive.scss"
+    },
+    {
+      "Id": "/Users/esh2n/go/github.com/esh2n/xdotnet/BlockchainMarketCap/wwwroot/scss/base/_typography.scss",
+      "PackagePath": "staticwebassets/scss/base/_typography.scss"
+    },
+    {
+      "Id": "/Users/esh2n/go/github.com/esh2n/xdotnet/BlockchainMarketCap/wwwroot/scss/components/_about.scss",
+      "PackagePath": "staticwebassets/scss/components/_about.scss"
+    },
+    {
+      "Id": "/Users/esh2n/go/github.com/esh2n/xdotnet/BlockchainMarketCap/wwwroot/scss/components/_buttons.scss",
+      "PackagePath": "staticwebassets/scss/components/_buttons.scss"
+    },
+    {
+      "Id": "/Users/esh2n/go/github.com/esh2n/xdotnet/BlockchainMarketCap/wwwroot/scss/components/_crypto-table.scss",
+      "PackagePath": "staticwebassets/scss/components/_crypto-table.scss"
+    },
+    {
+      "Id": "/Users/esh2n/go/github.com/esh2n/xdotnet/BlockchainMarketCap/wwwroot/scss/components/_error-display.scss",
+      "PackagePath": "staticwebassets/scss/components/_error-display.scss"
+    },
+    {
+      "Id": "/Users/esh2n/go/github.com/esh2n/xdotnet/BlockchainMarketCap/wwwroot/scss/components/_error.scss",
+      "PackagePath": "staticwebassets/scss/components/_error.scss"
+    },
+    {
+      "Id": "/Users/esh2n/go/github.com/esh2n/xdotnet/BlockchainMarketCap/wwwroot/scss/components/_home.scss",
+      "PackagePath": "staticwebassets/scss/components/_home.scss"
+    },
+    {
+      "Id": "/Users/esh2n/go/github.com/esh2n/xdotnet/BlockchainMarketCap/wwwroot/scss/layout/_layout.scss",
+      "PackagePath": "staticwebassets/scss/layout/_layout.scss"
+    },
+    {
+      "Id": "/Users/esh2n/go/github.com/esh2n/xdotnet/BlockchainMarketCap/wwwroot/scss/main.scss",
+      "PackagePath": "staticwebassets/scss/main.scss"
+    },
+    {
+      "Id": "/Users/esh2n/go/github.com/esh2n/xdotnet/BlockchainMarketCap/wwwroot/ts/components/CryptoCurrencyTable.vue",
+      "PackagePath": "staticwebassets/ts/components/CryptoCurrencyTable.vue"
+    },
+    {
+      "Id": "/Users/esh2n/go/github.com/esh2n/xdotnet/BlockchainMarketCap/wwwroot/ts/main.ts",
+      "PackagePath": "staticwebassets/ts/main.ts"
+    },
+    {
+      "Id": "/Users/esh2n/go/github.com/esh2n/xdotnet/BlockchainMarketCap/wwwroot/ts/models/ApiResult.ts",
+      "PackagePath": "staticwebassets/ts/models/ApiResult.ts"
+    },
+    {
+      "Id": "/Users/esh2n/go/github.com/esh2n/xdotnet/BlockchainMarketCap/wwwroot/ts/models/CryptoCurrency.ts",
+      "PackagePath": "staticwebassets/ts/models/CryptoCurrency.ts"
+    },
+    {
+      "Id": "/Users/esh2n/go/github.com/esh2n/xdotnet/BlockchainMarketCap/wwwroot/ts/services/apiService.ts",
+      "PackagePath": "staticwebassets/ts/services/apiService.ts"
+    },
+    {
+      "Id": "/Users/esh2n/go/github.com/esh2n/xdotnet/BlockchainMarketCap/wwwroot/ts/vue-shims.d.ts",
+      "PackagePath": "staticwebassets/ts/vue-shims.d.ts"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.BlockchainMarketCap.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.build.BlockchainMarketCap.props",
+      "PackagePath": "build\\BlockchainMarketCap.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.buildMultiTargeting.BlockchainMarketCap.props",
+      "PackagePath": "buildMultiTargeting\\BlockchainMarketCap.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.buildTransitive.BlockchainMarketCap.props",
+      "PackagePath": "buildTransitive\\BlockchainMarketCap.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
