@@ -1,0 +1,37 @@
+# Blockchain Market Cap Application - Project Intelligence
+
+## Project Patterns
+- This project uses a hybrid architecture combining Blazor (server-side) and Vue.js (client-side)
+- API calls should be centralized in dedicated service classes
+- Component-based architecture with clear separation of concerns
+- SCSS files should follow a component-based organization pattern
+- Responsive design principles should be applied throughout the UI
+
+## Naming Conventions
+- C# classes: PascalCase
+- C# methods: PascalCase
+- C# variables: camelCase
+- TypeScript/JavaScript: camelCase for variables and functions
+- CSS/SCSS: kebab-case for class names
+- File names should match the primary class/component name they contain
+
+## Code Organization
+- Backend services in /Services directory
+- Models in /Models directory
+- Blazor components in /Components directory
+- Vue.js components in /wwwroot/js/components
+- SCSS files in /wwwroot/scss
+
+## Development Workflow
+- Document new functionality in the memory bank before implementation
+- Update progress.md after completing each component or feature
+- Keep API keys in user secrets, never commit them to source control
+- Regular updates to activeContext.md as project focus changes
+
+## Technical Decisions
+- Cryptocurrency data will be fetched directly from APIs (no backend database)
+- Client-side sorting to reduce server load and improve responsiveness
+- Mobile-first responsive design approach
+- No authentication required for this application
+
+This file will evolve as we learn more about the project and establish additional patterns.
